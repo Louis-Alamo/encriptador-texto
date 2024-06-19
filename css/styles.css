@@ -1,0 +1,97 @@
+body, h1, form, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #001829;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 10px; /* Ajuste de padding para pantallas pequeñas */
+}
+
+.contenedor_area_texto {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.contenedor_area_texto h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+    margin-bottom: 20px;
+    resize: none;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor_botones {
+    display: flex;
+    justify-content: flex-end; /* Alinea los botones al final */
+    gap: 10px; /* Espacio entre los botones */
+    flex-wrap: wrap; /* Permite que los botones se envuelvan en pantallas pequeñas */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .contenedor_area_texto {
+        padding: 15px;
+    }
+
+    .contenedor_botones {
+        justify-content: center; 
+    }
+
+    button {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    button:last-child {
+        margin-bottom: 0; 
+    }
+}

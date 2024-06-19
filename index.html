@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <div class="contenedor_area_texto">
+        <h1>Encriptador de texto</h1>
+    
+        <form>
+            <label for="textoAEncriptar">Texto a encriptar/desencriptar:</label>
+            <textarea id="textoAEncriptar" name="textoAEncriptar"></textarea>
+    
+            <label for="textoEncriptado">Texto encriptado/desencriptado:</label>
+            <textarea id="textoEncriptado" name="textoEncriptado"></textarea>
+    
+            <div class="contenedor_botones">
+                <button type="button" id="botonEncriptar">Encriptar</button>
+                <button type="button" id="botonDesencriptar">Desencriptar</button>
+                <button type="button" id="botonCopiar">Copiar</button>
+            </div>
+        </form>
+    </div>
+
+
+    <script src="scripts/EncriptarDesencriptar.js"></script>
+</body>
+</html>
